@@ -1,0 +1,359 @@
+/* fontes: Fraunces, Oswald e Lato */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* estilos para telas maiores */
+@media (min-width: 768px) {
+    .topo {
+        height: 80px;
+    }
+
+    .topo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .topo .links {
+        width: 400px;
+    }
+
+    .topo a {
+        font-size: 18px;
+    }
+
+    .banner h1 {
+        font-size: 80px;
+    }
+
+    .texto h2 {
+        font-size: 24px;
+    }
+
+    .frases h3 {
+        font-size: 24px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+
+    .horarios h2 {
+        font-size: 24px;
+    }
+
+    .horarios li h3 {
+        font-size: 18px;
+    }
+
+    .horarios li p {
+        font-size: 16px;
+    }
+}
+
+/* estilos para telas menores */
+@media (max-width: 767px) {
+    .topo {
+        height: auto;
+        padding: 10px;
+    }
+
+    .topo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .topo .links {
+        width: auto;
+        text-align: center;
+    }
+
+    .topo a {
+        display: block;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .texto h2 {
+        font-size: 18px;
+        width: auto;
+        padding: 10px;
+    }
+
+    .frases h3 {
+        font-size: 18px;
+    }
+
+    .texto p {
+        font-size: 14px;
+        width: auto;
+        padding: 20px;
+    }
+
+    .horarios h2 {
+        font-size: 18px;
+    }
+
+    .horarios li h3 {
+        font-size: 14px;
+    }
+
+    .horarios li p {
+        font-size: 12px;
+    }
+}
+
+
+
+.topo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #604829;
+    height: 80px;
+
+}
+.topo img{
+    position: relative;
+    left: 20%;
+    top: -10%;
+    width: 100px;
+    height: 100px;
+}
+
+.topo .links{
+    width: 400px;
+    position: absolute  ;
+    right: 0;
+    bottom: 40%;
+
+   }
+
+.topo a{
+    padding: 10px;
+    color: #c4a47c;
+    font-weight: bold;
+    text-shadow: 3px 5px 2px #000000;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;   
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(assets/parallax-imagem1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: antiquewhite;
+}
+
+.banner h1{
+    top: 45%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Fraunces", serif;
+    font-size: 80px;
+}
+
+.texto h2{
+    width: 500px;
+    padding: 20px 0px;
+    position: relative;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 24px;
+    font-family: "Oswald", serif;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #c4a47c;
+ 
+
+}
+
+.frases{
+    background-color: #604829;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 15px;
+
+}
+
+.frases h3{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Fraunces", sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #ffffff;
+    
+}
+.texto p{
+    margin: 10px auto;
+    width: 70%;
+    padding: 40px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #666;
+}
+    */
+.imagem1{
+    background-image: url(assets/parallax-imagem2.jpg);
+    height: 50vh;
+}
+
+.imagem2{
+    background-image: url(assets/parallax-imagem3.jpg);
+    height: 50vh;
+}
+.imagem1, .imagem2, .horarios, .contatos{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    
+}
+
+.contatos{
+    background-image: url(assets/parallax-imagem4.png);
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    Justify-content: space-around;
+}
+.contatos .titulo_contato{
+    background-color: #604829;
+    width: 500px;
+    padding: 10px;
+    left: 0;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+  
+}
+
+.contatos .mapa{
+    margin: auto;
+    background-position: center;
+    height: 50%;
+    text-align: center;
+}
+.contatos .endereco{
+    color: #fff;
+    background-color: #604829;
+    font-family: "Oswald", sans-serif;
+    padding: 2%;
+    text-shadow: 0px 6px 8px #000000;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+
+
+.horarios{  
+    background-image: url(assets/cafeteria.jpg);
+    height: auto;
+    padding: 100px 20px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.horarios .quadro{
+    margin-bottom: 30px;
+
+}
+.horarios li{
+  list-style: none;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.horarios li div{
+    height: 1px;
+    background-color: gray;
+    flex: 1 1 auto;
+}
+.horarios li p{
+    text-align: right;
+    flex: 0 1 100px;
+    color: #ffffff;;
+}
+.horarios li h3{
+    color: #ffffff;
+    flex: 0 1 80px;
+}
+
+.horarios h2{
+    color: #ffffff;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rodape {
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+    line-height: 34px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    background-color: #000000;
+    color: #fff;
+
+}
+
+.rodape a{
+    background-image: url(assets/seta-para-cima.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #c4a47c;
+    border-radius: 4px;
+
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+}
+.rodape span {
+    color: #c4a47c;
+}
