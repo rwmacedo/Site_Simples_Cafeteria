@@ -1,0 +1,125 @@
+/* fontes: Fraunces, Oswald e Lato */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* estilos para telas maiores */
+@media (min-width: 768px) {
+   
+    .texto h2 {
+        font-size: 24px;
+    }
+
+    .frases h3 {
+        font-size: 24px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+
+    
+}
+
+/* estilos para telas menores */
+@media (max-width: 767px) {
+  
+
+    .texto h2 {
+        font-size: 16px;
+        width: auto;
+        padding: 10px;
+    }
+
+    .frases h3 {
+        font-size: 16px;
+    }
+
+    .texto p {
+        font-size: 14px;
+        width: auto;
+        padding: 20px;
+    }
+
+   
+}
+
+
+
+.texto h2{
+    width: 500px;
+    padding: 20px 0px;
+    position: relative;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 24px;
+    font-family: "Oswald", serif;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #c4a47c;
+ 
+
+}
+
+.frases{
+    background-color: #604829;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 15px;
+
+}
+
+.frases h3{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Fraunces", sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #ffffff;
+    
+}
+.texto p{
+    margin: 10px auto;
+    width: 70%;
+    padding: 40px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #666;
+}
+    
+.imagem1{
+    background-image: url(../../../assets/parallax-imagem2.jpg);
+    height: 50vh;
+}
+
+.imagem2{
+    background-image: url(../../../assets/parallax-imagem3.jpg);
+    height: 50vh;
+}
+.imagem1, .imagem2, .horarios, .contatos{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    
+}

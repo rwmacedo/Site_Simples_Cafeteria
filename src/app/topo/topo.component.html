@@ -1,0 +1,11 @@
+<div class="topo">
+    <img src="logo.png" alt="logo">
+    <div class="menu-toggle" (click)="alternarMenu()">
+        <div></div>
+    </div>
+    <div class="links" [class.open]="menuAberto">
+        <a href="#container_informacoes" class="ilink">INFORMAÇÕES</a>
+        <a href="#container_contatos" class="ilink">CONTATOS</a>
+        <a href="#container_horarios" class="ilink">HORARIOS</a>
+    </div>
+</div>

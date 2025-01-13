@@ -1,0 +1,38 @@
+
+/* estilos para telas maiores */
+@media (min-width: 768px) {
+  
+    .banner h1 {
+        font-size: 80px;
+    }
+}
+
+/* estilos para telas menores */
+@media (max-width: 767px) {
+    
+    .banner h1 {
+        font-size: 32x;
+    }}
+    
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../../assets/parallax-imagem1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: antiquewhite;
+}
+
+.banner h1{
+    top: 45%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Fraunces", serif;
+    font-size: 80px;
+}
